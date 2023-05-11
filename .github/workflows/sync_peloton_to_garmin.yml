@@ -10,7 +10,7 @@ on:
         type: number
         default: "5"
   schedule:
-    - cron: '0 1 * * *'
+    - cron: '*/30 * * * *'
 
 jobs:
   sync:
@@ -82,4 +82,4 @@ jobs:
         P2G_PELOTON__PASSWORD: ${{ secrets.P2G_PELOTON__PASSWORD }}
         P2G_GARMIN__EMAIL: ${{ secrets.P2G_GARMIN__EMAIL }}
         P2G_GARMIN__PASSWORD: ${{ secrets.P2G_GARMIN__PASSWORD }}
-        TZ: America/Chicago
+        TZ: America/New_York
